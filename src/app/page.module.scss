@@ -1,0 +1,13 @@
+.home {
+  height: calc(100vh - 150px);
+  position: relative;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  scrollbar-width: none;
+  overflow: hidden;
+  overflow-y: scroll;
+
+  > *{
+    scroll-snap-align: center ;
+  }
+}

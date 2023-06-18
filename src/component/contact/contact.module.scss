@@ -1,0 +1,58 @@
+.contact {
+  height: calc(100vh - 150px);
+  h1 {
+    font-size: 60px;
+    text-align: center;
+  }
+  .content {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+
+    .imgContanier {
+      flex: 1;
+      height: 500px;
+      position: relative;
+
+      img {
+        object-fit: contain;
+        animation: animate 3s infinite ease alternate;
+        @keyframes animate {
+          from {
+            transform: translateY(-15px);
+          }
+          to {
+            transform: translateY(0px) scale(1.03);
+          }
+        }
+      }
+    }
+
+    form {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      input,
+      textarea {
+        padding: 20px;
+        background-color: transparent;
+        color: #bbb;
+        outline: none;
+        border: none;
+        border: 3px solid #bbb;
+      }
+
+      button {
+        padding: 10px;
+        border: none;
+        font-size: 16px;
+        background-color: rgb(172, 172, 41);
+        color: white;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+    }
+  }
+}

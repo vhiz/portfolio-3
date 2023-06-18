@@ -1,0 +1,9 @@
+.projects{
+    height: calc(100vh - 150px);
+    overflow-y: auto;
+    scrollbar-width: none;
+    .head{
+        font-size: 50px;
+        color: #acac29;
+    }
+}
