@@ -24,7 +24,7 @@ export const other = {
     "Problem solving",
     "Communication",
     "Hardworking",
-    "Continous Learning",
+    "Constant Learning",
     "Business",
   ],
 };

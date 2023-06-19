@@ -1,11 +1,17 @@
-.navbar{
-    display: flex;
-    height: 100px;
-    align-items: center;
-    justify-content: space-between;
+@import "../../global.scss";
 
-    .links{
-        display: flex;
-        gap: 20px;
+.navbar {
+  display: flex;
+  height: 100px;
+  align-items: center;
+  justify-content: space-between;
+
+  .links {
+    display: flex;
+    gap: 20px;
+
+    @include mobile-only {
+      display: none;
     }
+  }
 }

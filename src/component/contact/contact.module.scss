@@ -1,8 +1,21 @@
+@import "../../global.scss";
 .contact {
   height: calc(100vh - 150px);
+
   h1 {
     font-size: 60px;
     text-align: center;
+
+    @include mobile-only {
+      margin-bottom: 20px;
+      font-size: 30px;
+    }
+    @include ipad-only {
+      font-size: 40px;
+    }
+    @include small-screen {
+      font-size: 50px;
+    }
   }
   .content {
     display: flex;
@@ -13,6 +26,9 @@
       flex: 1;
       height: 500px;
       position: relative;
+      @include mobile-only {
+        display: none;
+      }
 
       img {
         object-fit: contain;
@@ -42,6 +58,10 @@
         outline: none;
         border: none;
         border: 3px solid #bbb;
+
+        @include ipad-only {
+          padding: 10px;
+        }
       }
 
       button {

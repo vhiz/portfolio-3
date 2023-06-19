@@ -1,9 +1,14 @@
+@import "../../global.scss";
 .intro {
   height: calc(100vh - 150px);
   display: flex;
   gap: 100px;
   align-items: center;
 
+  @include mobile-only {
+    flex-direction: column;
+    align-items: center;
+  }
   button {
     width: max-content;
     padding: 10px;
@@ -25,11 +30,32 @@
       background: linear-gradient(to bottom, #4c3219, #bbb);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+
+      @include mobile-only {
+        font-size: 50px;
+      }
+
+      @include ipad-only{
+        font-size: 50px;
+      }
+      @include small-screen{
+        font-size: 59px;
+      }
     }
 
     p {
       font-size: 24px;
       font-weight: 300;
+
+      @include mobile-only{
+        font-size: 20px;
+      }
+      @include ipad-only{
+        font-size: 22px;
+      }
+      @include small-screen{
+        font-size: 22px;
+      }
     }
   }
 
@@ -42,6 +68,11 @@
       height: 600px;
       object-fit: contain;
       animation: animate 2s infinite ease alternate;
+
+      @include mobile-only {
+        display: none;
+        flex: none;
+      }
 
       @keyframes animate {
         to {

@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image";
 import styles from "./contact.module.scss";
 
@@ -13,7 +15,7 @@ export default function Contact() {
           <input type="text" placeholder="Name" />
           <input type="email" placeholder="Email" />
           <textarea placeholder="Message..." cols="10" rows="10"></textarea>
-          <button>Send</button>
+          <button onClick={(e) => e.preventDefault()}>Send</button>
         </form>
       </div>
     </div>

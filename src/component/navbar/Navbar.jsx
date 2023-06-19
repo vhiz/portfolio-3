@@ -39,8 +39,8 @@ export default function Navbar() {
       <Link href="#" onClick={() => scrollToSection("intro")}>
         <Image src="/logo.png" alt="" width={30} height={30} />
       </Link>
-      <div className={styles.links}>
         <Darkmode />
+      <div className={styles.links}>
         {links.map((link) => (
           <Link href={'#'} onClick={() => scrollToSection(link.url)}>
             {link.name}

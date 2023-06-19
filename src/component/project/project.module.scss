@@ -1,7 +1,9 @@
+@import "../../global.scss";
 .project {
   margin-top: 20px;
   display: flex;
   gap: 30px;
+  align-items: center;
 
   &:nth-child(2n) {
     flex-direction: row-reverse;
@@ -10,6 +12,7 @@
   &:nth-last-child(1) {
     margin-bottom: 20px;
   }
+
   .info {
     flex: 1;
     display: flex;
@@ -17,9 +20,30 @@
     gap: 20px;
     justify-content: center;
 
+    h1{
+      @include mobile-only{
+        font-size: 15px;
+      }
+      @include ipad-only{
+        font-size: 18px;
+      }
+      @include small-screen{
+        font-size: 20px;
+      }
+    }
     span {
       font-size: 18px;
       text-align: justify;
+
+      @include mobile-only{
+        font-size: 12px;
+      }
+      @include ipad-only{
+        font-size: 14px;
+      }
+      @include small-screen{
+        font-size: 16px;
+      }
     }
     .links {
       display: flex;
@@ -34,6 +58,13 @@
         cursor: pointer;
         border-radius: 5px;
         width: max-content;
+
+        @include mobile-only{
+          font-size: 13px;
+        }
+        @include ipad-only{
+          font-size: 15px;
+        }
       }
 
       img{
@@ -47,6 +78,16 @@
     flex: 1;
     position: relative;
     height: 300px;
+
+    @include mobile-only{
+      height: 150px;
+    }
+    @include ipad-only{
+      height: 200px;
+    }
+    @include small-screen{
+      height: 250px;
+    }
 
     img {
       width: 100%;
