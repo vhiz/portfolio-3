@@ -13,7 +13,7 @@ export const backend = {
 };
 
 export const frontend = {
-  img: "/7.png",
+  img: "../img/7.png",
   skills: ["Next Js", "React", "Redux", "HTML", "SASS", "CSS"],
 };
 

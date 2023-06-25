@@ -1,7 +1,7 @@
 "use client"
 import Image from "next/image";
 import styles from "./intro.module.scss";
-import Hero from "public/1.png"
+import Hero from '../../img/1.png';
 export default function Intro() {
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
@@ -20,7 +20,7 @@ export default function Intro() {
         <button onClick={()=>scrollToSection('contact')}>Contact 📞</button>
       </div>
       <div className={styles.imgContainer}>
-        <Image src={Hero} />
+        <Image src={Hero} alt="" />
       </div>
     </div>
   );

@@ -48,8 +48,8 @@ export default function Skills() {
       </div>
       <div className={styles.textContanier}>
         <div className={styles.info}>
-          {data.skills.map((skill) => (
-            <p>{`- ${skill}`}</p>
+          {data.skills.map((skill,i) => (
+            <p key={i}>{`- ${skill}`}</p>
           ))}
         </div>
         <div className={styles.img}>
